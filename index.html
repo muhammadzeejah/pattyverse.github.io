@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+        .text-center {
+            margin: 0;
+            padding:0;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+        }           
+    </style>
+</head>
+<body>
+     <!-- center text in webpage -->
+     <div class="text-center">
+        <h1>Chatbot Integration</h1>
+    </div>
+    <!-- This is the main code for chatbot  -->
+    <df-messenger
+    intent="WELCOME"
+    chat-title="Pattyverse"
+    agent-id="48f141b3-ceef-483d-80f2-aff1610a683b"
+    language-code="en"
+    ></df-messenger>
+    <script src="script.js"></script>
+</body>
+</html>
